@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesibilidad</title>
+</head>
+<body>
+    <button aria-label="Cerrar ventana">x</button>
+
+    <header>
+        <nav aria-label="Menú Principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+        </nav>
+    </header>
+
+    <input type="search" aria-label="Buscador de productos"/>
+
+    <label for="password">Contraseña<area shape="" coords="" href="" alt=""></label>
+    <input type="password" id="password" aria-describedby="password-help">
+    <small id="password-help">Minimo 8 caracteres, incluya números y letras.</small>
+
+    <img src="" alt="Ventas 2024" aria-describedby="Grafica-descripcion">
+    <p id="Grafica-descripcion">Las ventas aumentaron un 40% en el Q1</p>
+
+    <div role="main">
+        <h3>Contenido principal de la seccion</h3>
+        <p>Aqui va el contendio mas importante de esta seccion</p>
+    </div>
+
+    <div role="alert">¡Tu sesión expirara en 5 minutos!</div>
+</body>
+</html>
